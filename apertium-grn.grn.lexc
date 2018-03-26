@@ -35,6 +35,15 @@ Multichar_Symbols
 %<pos%>              ! Possesive
 %<det%>              ! Determiner
 
+! Punctuation
+%<sent%>             ! Sentence marker
+%<guio%>             ! Hyphen
+%<cm%>               ! Comma
+%<apos%>             ! Apostrophe
+%<rquot%>            ! Quote marker (right hand side)
+%<lquot%>            ! Quote marker (left hand side)
+%<rpar%>             ! Parenthetical marker (right hand side)
+%<lpar%>             ! Parenthetical marker (left hand side)
 
 
 %>                   ! Frontera de morfema
@@ -56,6 +65,7 @@ ProperNouns ;
 Verbs ; 
 Prefixes ;
 PersonalPronouns ;
+Punctuation ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -197,3 +207,29 @@ ko:ko V ; ! "vivir"
 LEXICON Adjectives
 
 porã:porã ; ! "bonito"
+
+LEXICON Punctuation
+
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+%–%<guio%>:%– # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
